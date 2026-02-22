@@ -1,27 +1,20 @@
-# sysinfo-gtk
+# Sysinfo GTK
 
-System information and benchmark tool.
+System information viewer — a modern hardinfo2 alternative.
 
-GTK4/Adwaita · Python · v0.1.2 · 97 translatable strings
+Built with GTK4/Adwaita. Part of the [Danne L10n Suite](https://github.com/yeager/debian-repo).
 
-## Install
+## Installation
 
-### Ubuntu / Debian
+### Debian/Ubuntu
 ```bash
 sudo apt install sysinfo-gtk
 ```
-Repo: [yeager/debian-repo](https://github.com/yeager/debian-repo)
-
-### Fedora
-```bash
-sudo dnf install sysinfo-gtk
-```
-Repo: [yeager/rpm-repo](https://github.com/yeager/rpm-repo)
-
-## Translation
-
-Translated via [Transifex](https://app.transifex.com/danielnylander/sysinfo-gtk/). 11 languages.
 
 ## License
 
-GPL-3.0-or-later · Daniel Nylander <daniel@danielnylander.se>
+GPL-3.0
+
+## Author
+
+Daniel Nylander — [danielnylander.se](https://danielnylander.se)
