@@ -1,10 +1,10 @@
 # sysinfo-gtk
 
-Systeminformation och benchmark-verktyg.
+System information and benchmark tool.
 
-GTK4/Adwaita · Python · v0.1.2 · 97 översättningsbara strängar
+GTK4/Adwaita · Python · v0.1.2 · 97 translatable strings
 
-## Installation
+## Install
 
 ### Ubuntu / Debian
 ```bash
@@ -18,10 +18,10 @@ sudo dnf install sysinfo-gtk
 ```
 Repo: [yeager/rpm-repo](https://github.com/yeager/rpm-repo)
 
-## Översättning
+## Translation
 
-Översätts via [Transifex](https://app.transifex.com/danielnylander/sysinfo-gtk/). 11 språk.
+Translated via [Transifex](https://app.transifex.com/danielnylander/sysinfo-gtk/). 11 languages.
 
-## Licens
+## License
 
 GPL-3.0-or-later · Daniel Nylander <daniel@danielnylander.se>
