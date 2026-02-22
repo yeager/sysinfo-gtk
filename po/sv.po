@@ -1,0 +1,434 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the sysinfo-gtk package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sysinfo-gtk 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-22 07:31+0100\n"
+"PO-Revision-Date: 2026-02-22 08:37+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/305208/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/sysinfo_gtk/main.py:71
+msgid "Hostname"
+msgstr "Värdnamn"
+
+#: src/sysinfo_gtk/main.py:72
+msgid "OS"
+msgstr "OS"
+
+#: src/sysinfo_gtk/main.py:73
+msgid "Kernel"
+msgstr "Kärna"
+
+#: src/sysinfo_gtk/main.py:74
+msgid "Architecture"
+msgstr "Arkitektur"
+
+#: src/sysinfo_gtk/main.py:75
+msgid "Desktop"
+msgstr "Skrivbord"
+
+#: src/sysinfo_gtk/main.py:75 src/sysinfo_gtk/main.py:145
+#: src/sysinfo_gtk/main.py:377 src/sysinfo_gtk/main.py:692
+msgid "Unknown"
+msgstr "Okänd"
+
+#: src/sysinfo_gtk/main.py:84
+msgid "Uptime"
+msgstr "Driftstid"
+
+#: src/sysinfo_gtk/main.py:90
+msgid "Logged in users"
+msgstr "Inloggade användare"
+
+#: src/sysinfo_gtk/main.py:92 src/sysinfo_gtk/main.py:677
+msgid "Summary"
+msgstr "Sammanfattning"
+
+#: src/sysinfo_gtk/main.py:108 src/sysinfo_gtk/main.py:145
+msgid "Model"
+msgstr "Modell"
+
+#: src/sysinfo_gtk/main.py:109
+msgid "Threads"
+msgstr "Trådar"
+
+#: src/sysinfo_gtk/main.py:117
+msgid "Physical cores"
+msgstr "Fysiska kärnor"
+
+#: src/sysinfo_gtk/main.py:123
+msgid "Current frequency"
+msgstr "Strömfrekvens"
+
+#: src/sysinfo_gtk/main.py:129
+msgid "Cache"
+msgstr "Cache"
+
+#: src/sysinfo_gtk/main.py:141
+msgid "Features"
+msgstr "Funktioner"
+
+#: src/sysinfo_gtk/main.py:150
+msgid "Load average"
+msgstr "Genomsnittlig belastning"
+
+#: src/sysinfo_gtk/main.py:152 src/sysinfo_gtk/main.py:678
+msgid "Processor"
+msgstr "Processor"
+
+#: src/sysinfo_gtk/main.py:174
+msgid "Total"
+msgstr "Totalt"
+
+#: src/sysinfo_gtk/main.py:175
+msgid "Available"
+msgstr "Tillgänglig"
+
+#: src/sysinfo_gtk/main.py:176
+msgid "Used"
+msgstr "Använt"
+
+#: src/sysinfo_gtk/main.py:178
+msgid "Swap total"
+msgstr "Växlingsutrymme totalt"
+
+#: src/sysinfo_gtk/main.py:179
+msgid "Swap used"
+msgstr "Växlingsutrymme använt"
+
+#: src/sysinfo_gtk/main.py:189
+msgid "Type"
+msgstr "Typ"
+
+#: src/sysinfo_gtk/main.py:192
+msgid "Speed"
+msgstr "Hastighet"
+
+#: src/sysinfo_gtk/main.py:194 src/sysinfo_gtk/main.py:679
+msgid "Memory"
+msgstr "Minne"
+
+#: src/sysinfo_gtk/main.py:212
+msgid "Block devices"
+msgstr "Blockenheter"
+
+#: src/sysinfo_gtk/main.py:223 src/sysinfo_gtk/main.py:680
+msgid "Storage"
+msgstr "Lagring"
+
+#: src/sysinfo_gtk/main.py:234 src/sysinfo_gtk/main.py:257
+msgid "GPU"
+msgstr "GPU"
+
+#: src/sysinfo_gtk/main.py:241
+msgid "OpenGL renderer"
+msgstr "OpenGL-renderare"
+
+#: src/sysinfo_gtk/main.py:243
+msgid "OpenGL version"
+msgstr "OpenGL-version"
+
+#: src/sysinfo_gtk/main.py:251
+msgid "Vulkan device"
+msgstr "Vulkan-enhet"
+
+#: src/sysinfo_gtk/main.py:253
+msgid "Vulkan API"
+msgstr "Vulkan API"
+
+#: src/sysinfo_gtk/main.py:257
+msgid "No GPU detected (lspci not available?)"
+msgstr "Ingen GPU upptäckt (lspci inte tillgängligt?)"
+
+#: src/sysinfo_gtk/main.py:259 src/sysinfo_gtk/main.py:681
+msgid "Graphics"
+msgstr "Grafik"
+
+#: src/sysinfo_gtk/main.py:280 src/sysinfo_gtk/main.py:288
+#: src/sysinfo_gtk/main.py:683
+msgid "Network"
+msgstr "Nätverk"
+
+#: src/sysinfo_gtk/main.py:286
+msgid "DNS servers"
+msgstr "DNS-servrar"
+
+#: src/sysinfo_gtk/main.py:308
+msgid "PCI"
+msgstr "PCI"
+
+#: src/sysinfo_gtk/main.py:308
+msgid "lspci not available"
+msgstr "lspci är inte tillgängligt"
+
+#: src/sysinfo_gtk/main.py:309 src/sysinfo_gtk/main.py:686
+msgid "PCI Devices"
+msgstr "PCI-enheter"
+
+#: src/sysinfo_gtk/main.py:324
+msgid "USB"
+msgstr "USB"
+
+#: src/sysinfo_gtk/main.py:324
+msgid "lsusb not available"
+msgstr "lsusb inte tillgängligt"
+
+#: src/sysinfo_gtk/main.py:325 src/sysinfo_gtk/main.py:687
+msgid "USB Devices"
+msgstr "USB-enheter"
+
+#: src/sysinfo_gtk/main.py:359 src/sysinfo_gtk/main.py:360
+#: src/sysinfo_gtk/main.py:684
+msgid "Sensors"
+msgstr "Sensorer"
+
+#: src/sysinfo_gtk/main.py:359
+msgid "No sensor data available"
+msgstr "Inga sensordata tillgängliga"
+
+#: src/sysinfo_gtk/main.py:377
+msgid "Status"
+msgstr "Status"
+
+#: src/sysinfo_gtk/main.py:379
+msgid "Capacity"
+msgstr "Kapacitet"
+
+#: src/sysinfo_gtk/main.py:381
+msgid "Technology"
+msgstr "Teknik"
+
+#: src/sysinfo_gtk/main.py:384
+msgid "Health"
+msgstr "Hälsa"
+
+#: src/sysinfo_gtk/main.py:387 src/sysinfo_gtk/main.py:388
+#: src/sysinfo_gtk/main.py:685
+msgid "Battery"
+msgstr "Batteri"
+
+#: src/sysinfo_gtk/main.py:387
+msgid "No battery detected"
+msgstr "Inget batteri upptäckt"
+
+#: src/sysinfo_gtk/main.py:403
+msgid "Size"
+msgstr "Storlek"
+
+#: src/sysinfo_gtk/main.py:403
+msgid "Used by"
+msgstr "Används av"
+
+#: src/sysinfo_gtk/main.py:404 src/sysinfo_gtk/main.py:689
+msgid "Kernel Modules"
+msgstr "Kärnmoduler"
+
+#: src/sysinfo_gtk/main.py:417 src/sysinfo_gtk/main.py:688
+msgid "Filesystems"
+msgstr "Filsystem"
+
+#: src/sysinfo_gtk/main.py:430 src/sysinfo_gtk/main.py:432
+msgid "Session"
+msgstr "Session"
+
+#: src/sysinfo_gtk/main.py:434 src/sysinfo_gtk/main.py:682
+msgid "Display"
+msgstr "Skärm"
+
+#: src/sysinfo_gtk/main.py:444 src/sysinfo_gtk/main.py:690
+msgid "Environment"
+msgstr "Miljö"
+
+#: src/sysinfo_gtk/main.py:464 src/sysinfo_gtk/main.py:483
+#: src/sysinfo_gtk/main.py:514
+msgid "Test"
+msgstr "Testa"
+
+#: src/sysinfo_gtk/main.py:464
+msgid "Prime numbers up to 100,000"
+msgstr "Primtal upp till 100 000"
+
+#: src/sysinfo_gtk/main.py:465
+msgid "Primes found"
+msgstr "Primtal hittade"
+
+#: src/sysinfo_gtk/main.py:466 src/sysinfo_gtk/main.py:484
+msgid "Time"
+msgstr "Tid"
+
+#: src/sysinfo_gtk/main.py:467
+msgid "Score"
+msgstr "Poäng"
+
+#: src/sysinfo_gtk/main.py:483
+msgid "Memory copy 10×10 MB"
+msgstr "Minneskopiering 10×10 MB"
+
+#: src/sysinfo_gtk/main.py:485
+msgid "Bandwidth"
+msgstr "Bandbredd"
+
+#: src/sysinfo_gtk/main.py:514
+msgid "Disk I/O 50 MB"
+msgstr "Disk I/O 50 MB"
+
+#: src/sysinfo_gtk/main.py:515
+msgid "Write"
+msgstr "Skriv"
+
+#: src/sysinfo_gtk/main.py:516
+msgid "Read"
+msgstr "Läs"
+
+#: src/sysinfo_gtk/main.py:544 src/sysinfo_gtk/main.py:552
+#: src/sysinfo_gtk/main.py:917
+msgid "System Information"
+msgstr "Systeminformation"
+
+#: src/sysinfo_gtk/main.py:556
+msgid "Refresh all"
+msgstr "Uppdatera alla"
+
+#: src/sysinfo_gtk/main.py:560
+msgid "Copy current section"
+msgstr "Kopiera aktuell sektion"
+
+#: src/sysinfo_gtk/main.py:564
+msgid "Export full report"
+msgstr "Exportera fullständig rapport"
+
+#: src/sysinfo_gtk/main.py:571 src/sysinfo_gtk/main.py:876
+msgid "CPU Benchmark"
+msgstr "CPU-benchmark"
+
+#: src/sysinfo_gtk/main.py:572 src/sysinfo_gtk/main.py:879
+msgid "Memory Benchmark"
+msgstr "Minnesbenchmark"
+
+#: src/sysinfo_gtk/main.py:573 src/sysinfo_gtk/main.py:882
+msgid "Disk Benchmark"
+msgstr "Diskbenchmark"
+
+#: src/sysinfo_gtk/main.py:574
+msgid "Benchmarks"
+msgstr "Benchmarks"
+
+#: src/sysinfo_gtk/main.py:575
+msgid "Copy Debug Info"
+msgstr "Kopiera felsökningsinformation"
+
+#: src/sysinfo_gtk/main.py:576
+msgid "Keyboard Shortcuts"
+msgstr "Tangentbordsgenvägar"
+
+#: src/sysinfo_gtk/main.py:577
+msgid "About System Information"
+msgstr "Om systeminformation"
+
+#: src/sysinfo_gtk/main.py:614 src/sysinfo_gtk/main.py:749
+msgid "Loading..."
+msgstr "Läser in..."
+
+#: src/sysinfo_gtk/main.py:634
+msgid "Welcome"
+msgstr "Välkommen"
+
+#: src/sysinfo_gtk/main.py:640
+msgid "Welcome to System Information"
+msgstr "Välkommen till Systeminformation"
+
+#: src/sysinfo_gtk/main.py:642
+msgid ""
+"Detailed hardware and software information.\\n\\n✓ CPU, memory, storage, GPU"
+" details\\n✓ PCI and USB device listing\\n✓ Temperature and fan sensors\\n✓ "
+"Network interfaces\\n✓ CPU, memory, and disk benchmarks\\n✓ Export full "
+"system report"
+msgstr ""
+"Detaljerad information om hårdvara och programvara.\\n\\n✓ Detaljer om CPU, "
+"minne, lagring och GPU\\n✓ Lista över PCI- och USB-enheter\\n✓ Temperatur- "
+"och fläktsensorer\\n✓ Nätverksgränssnitt\\n✓ Prestandatester för CPU, minne "
+"och disk\\n✓ Exportera fullständig systemrapport"
+
+#: src/sysinfo_gtk/main.py:651
+msgid "Get Started"
+msgstr "Kom igång"
+
+#: src/sysinfo_gtk/main.py:720
+msgid "Error"
+msgstr "Fel"
+
+#: src/sysinfo_gtk/main.py:727
+#, python-format
+msgid "%(time)s — %(count)d items loaded"
+msgstr "%(time)s — %(count)d objekt inlästa"
+
+#: src/sysinfo_gtk/main.py:773
+#, python-format
+msgid "Copied: %s"
+msgstr "Kopierade: %s"
+
+#: src/sysinfo_gtk/main.py:788
+#, python-format
+msgid "Section copied: %s"
+msgstr "Sektion kopierad: %s"
+
+#: src/sysinfo_gtk/main.py:791
+msgid "Refreshing..."
+msgstr "Uppdaterar..."
+
+#: src/sysinfo_gtk/main.py:797
+msgid "Export System Report"
+msgstr "Exportera systemrapport"
+
+#: src/sysinfo_gtk/main.py:813
+#, python-format
+msgid "Report exported to %s"
+msgstr "Rapport exporterad till %s"
+
+#: src/sysinfo_gtk/main.py:833
+#, python-format
+msgid "Benchmark complete: %s"
+msgstr "Benchmark slutförd: %s"
+
+#: src/sysinfo_gtk/main.py:867
+#, python-format
+msgid "Running benchmark: %s..."
+msgstr "Kör benchmark: %s..."
+
+#: src/sysinfo_gtk/main.py:898
+msgid "Debug info copied"
+msgstr "Felsökningsinformation kopierad"
+
+#: src/sysinfo_gtk/main.py:904
+msgid "General"
+msgstr "Allmänt"
+
+#: src/sysinfo_gtk/main.py:906
+msgid "Quit"
+msgstr "Avsluta"
+
+#: src/sysinfo_gtk/main.py:907
+msgid "Keyboard shortcuts"
+msgstr "Tangentbordsgenvägar"
+
+#: src/sysinfo_gtk/main.py:924
+msgid ""
+"System information and benchmark tool. A modern GTK4/Adwaita alternative to "
+"hardinfo2."
+msgstr ""
+"Systeminformation och benchmarkverktyg. Ett modernt GTK4/Adwaita-alternativ "
+"till hardinfo2."

@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[o:danielnylander:p:sysinfo-gtk:r:sysinfo-gtk-pot]
+[o:danielnylander:p:sysinfo-gtk:r:sysinfo_gtk]
 file_filter = po/<lang>.po
 source_file = po/sysinfo-gtk.pot
 source_lang = en
