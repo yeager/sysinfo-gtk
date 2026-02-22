@@ -475,7 +475,7 @@ def run_benchmark_memory():
 
     start = time.monotonic()
     for i in range(10):
-        _unused = bytes(data)
+        _ = bytes(data)
     elapsed = time.monotonic() - start
 
     bandwidth = (size * 10) / elapsed / 1024 / 1024

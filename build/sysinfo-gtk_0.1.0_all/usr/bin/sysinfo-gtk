@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from sysinfo_gtk.main import main
+main()
