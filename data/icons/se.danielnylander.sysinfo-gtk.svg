@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#2c5ea2"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <!-- Monitor body -->
+  <rect x="20" y="18" width="88" height="64" rx="6" fill="url(#screen)" stroke="#a0c4ff" stroke-width="2.5"/>
+  <!-- Screen content: CPU/system bars -->
+  <rect x="28" y="28" width="32" height="4" rx="2" fill="#4fc3f7"/>
+  <rect x="28" y="36" width="24" height="4" rx="2" fill="#81c784"/>
+  <rect x="28" y="44" width="40" height="4" rx="2" fill="#ffb74d"/>
+  <rect x="28" y="52" width="18" height="4" rx="2" fill="#e57373"/>
+  <rect x="28" y="60" width="30" height="4" rx="2" fill="#ba68c8"/>
+  <!-- CPU chip symbol (right side of screen) -->
+  <rect x="72" y="32" width="28" height="28" rx="4" fill="none" stroke="#a0c4ff" stroke-width="2"/>
+  <rect x="78" y="38" width="16" height="16" rx="2" fill="#a0c4ff" opacity="0.3"/>
+  <!-- CPU pins -->
+  <line x1="78" y1="30" x2="78" y2="26" stroke="#a0c4ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="86" y1="30" x2="86" y2="26" stroke="#a0c4ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="94" y1="30" x2="94" y2="26" stroke="#a0c4ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="78" y1="62" x2="78" y2="66" stroke="#a0c4ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="86" y1="62" x2="86" y2="66" stroke="#a0c4ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="94" y1="62" x2="94" y2="66" stroke="#a0c4ff" stroke-width="2" stroke-linecap="round"/>
+  <!-- Monitor stand -->
+  <rect x="52" y="82" width="24" height="6" rx="2" fill="#a0c4ff"/>
+  <rect x="44" y="88" width="40" height="5" rx="2.5" fill="#a0c4ff" opacity="0.7"/>
+  <!-- Info "i" badge -->
+  <circle cx="104" cy="104" r="14" fill="#ffd54f"/>
+  <text x="104" y="110" font-size="20" font-weight="bold" fill="#1a1a2e" text-anchor="middle" font-family="serif" font-style="italic">i</text>
+</svg>

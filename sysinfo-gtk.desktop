@@ -3,6 +3,6 @@ Type=Application
 Name=System Information
 Comment=System information and benchmark tool
 Exec=sysinfo-gtk
-Icon=computer-symbolic
+Icon=se.danielnylander.sysinfo-gtk
 Terminal=false
 Categories=System;

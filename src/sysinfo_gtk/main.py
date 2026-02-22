@@ -915,7 +915,7 @@ class SysInfoApp(Adw.Application):
         from . import __version__
         dialog = Adw.AboutDialog(
             application_name=_("System Information"),
-            application_icon="computer-symbolic",
+            application_icon="se.danielnylander.sysinfo-gtk",
             version=__version__,
             developer_name="Daniel Nylander",
             website="https://github.com/yeager/sysinfo-gtk",
