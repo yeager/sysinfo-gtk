@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sysinfo-gtk"
+version = "0.1.0"
+description = "GTK4/Adwaita system information and benchmark tool"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+authors = [{name = "Daniel Nylander", email = "daniel@danielnylander.se"}]
+dependencies = ["PyGObject>=3.42"]
+
+[project.scripts]
+sysinfo-gtk = "sysinfo_gtk.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=System Information
+Comment=System information and benchmark tool
+Exec=sysinfo-gtk
+Icon=computer-symbolic
+Terminal=false
+Categories=System;

@@ -1,0 +1,50 @@
+name: Build RPM
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: fedora:latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: dnf install -y rpm-build python3
+      - name: Build RPM
+        run: |
+          set -e
+          VER=$(grep -oP 'version = "\K[^"]+' pyproject.toml | head -1)
+          mkdir -p ~/rpmbuild/{SOURCES,SPECS,RPMS}
+          tar czf ~/rpmbuild/SOURCES/sysinfo-gtk-${VER}.tar.gz --transform "s,^,sysinfo-gtk/," -C $(pwd)/.. sysinfo-gtk/
+          cat > ~/rpmbuild/SPECS/sysinfo-gtk.spec << 'SPEC'
+          Name: sysinfo-gtk
+          Version: PLACEHOLDER
+          Release: 1
+          Summary: GTK4 system information and benchmark tool
+          License: GPL-3.0-or-later
+          URL: https://github.com/yeager/sysinfo-gtk
+          Source0: %{name}-%{version}.tar.gz
+          BuildArch: noarch
+          Requires: python3, python3-gobject, gtk4, libadwaita
+          %description
+          System information and benchmark tool. Modern GTK4/Adwaita alternative to hardinfo2.
+          %prep
+          %setup -q -n %{name}
+          %install
+          mkdir -p $RPM_BUILD_ROOT/usr/bin $RPM_BUILD_ROOT/usr/lib/python3/dist-packages/sysinfo_gtk $RPM_BUILD_ROOT/usr/share/applications
+          cp src/sysinfo_gtk/*.py $RPM_BUILD_ROOT/usr/lib/python3/dist-packages/sysinfo_gtk/
+          printf '#!/usr/bin/env python3\nfrom sysinfo_gtk.main import main\nmain()\n' > $RPM_BUILD_ROOT/usr/bin/sysinfo-gtk
+          chmod +x $RPM_BUILD_ROOT/usr/bin/sysinfo-gtk
+          cp sysinfo-gtk.desktop $RPM_BUILD_ROOT/usr/share/applications/
+          %files
+          /usr/bin/sysinfo-gtk
+          /usr/lib/python3/dist-packages/sysinfo_gtk/
+          /usr/share/applications/sysinfo-gtk.desktop
+          SPEC
+          sed -i "s/PLACEHOLDER/${VER}/" ~/rpmbuild/SPECS/sysinfo-gtk.spec
+          rpmbuild -bb ~/rpmbuild/SPECS/sysinfo-gtk.spec
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rpm-package
+          path: ~/rpmbuild/RPMS/**/*.rpm

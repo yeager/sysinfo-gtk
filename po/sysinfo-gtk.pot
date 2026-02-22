@@ -1,0 +1,424 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the sysinfo-gtk package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sysinfo-gtk 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-22 07:31+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/sysinfo_gtk/main.py:71
+msgid "Hostname"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:72
+msgid "OS"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:73
+msgid "Kernel"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:74
+msgid "Architecture"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:75
+msgid "Desktop"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:75 src/sysinfo_gtk/main.py:145
+#: src/sysinfo_gtk/main.py:377 src/sysinfo_gtk/main.py:692
+msgid "Unknown"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:84
+msgid "Uptime"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:90
+msgid "Logged in users"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:92 src/sysinfo_gtk/main.py:677
+msgid "Summary"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:108 src/sysinfo_gtk/main.py:145
+msgid "Model"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:109
+msgid "Threads"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:117
+msgid "Physical cores"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:123
+msgid "Current frequency"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:129
+msgid "Cache"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:141
+msgid "Features"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:150
+msgid "Load average"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:152 src/sysinfo_gtk/main.py:678
+msgid "Processor"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:174
+msgid "Total"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:175
+msgid "Available"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:176
+msgid "Used"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:178
+msgid "Swap total"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:179
+msgid "Swap used"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:189
+msgid "Type"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:192
+msgid "Speed"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:194 src/sysinfo_gtk/main.py:679
+msgid "Memory"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:212
+msgid "Block devices"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:223 src/sysinfo_gtk/main.py:680
+msgid "Storage"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:234 src/sysinfo_gtk/main.py:257
+msgid "GPU"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:241
+msgid "OpenGL renderer"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:243
+msgid "OpenGL version"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:251
+msgid "Vulkan device"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:253
+msgid "Vulkan API"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:257
+msgid "No GPU detected (lspci not available?)"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:259 src/sysinfo_gtk/main.py:681
+msgid "Graphics"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:280 src/sysinfo_gtk/main.py:288
+#: src/sysinfo_gtk/main.py:683
+msgid "Network"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:286
+msgid "DNS servers"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:308
+msgid "PCI"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:308
+msgid "lspci not available"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:309 src/sysinfo_gtk/main.py:686
+msgid "PCI Devices"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:324
+msgid "USB"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:324
+msgid "lsusb not available"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:325 src/sysinfo_gtk/main.py:687
+msgid "USB Devices"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:359 src/sysinfo_gtk/main.py:360
+#: src/sysinfo_gtk/main.py:684
+msgid "Sensors"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:359
+msgid "No sensor data available"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:377
+msgid "Status"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:379
+msgid "Capacity"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:381
+msgid "Technology"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:384
+msgid "Health"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:387 src/sysinfo_gtk/main.py:388
+#: src/sysinfo_gtk/main.py:685
+msgid "Battery"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:387
+msgid "No battery detected"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:403
+msgid "Size"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:403
+msgid "Used by"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:404 src/sysinfo_gtk/main.py:689
+msgid "Kernel Modules"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:417 src/sysinfo_gtk/main.py:688
+msgid "Filesystems"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:430 src/sysinfo_gtk/main.py:432
+msgid "Session"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:434 src/sysinfo_gtk/main.py:682
+msgid "Display"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:444 src/sysinfo_gtk/main.py:690
+msgid "Environment"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:464 src/sysinfo_gtk/main.py:483
+#: src/sysinfo_gtk/main.py:514
+msgid "Test"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:464
+msgid "Prime numbers up to 100,000"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:465
+msgid "Primes found"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:466 src/sysinfo_gtk/main.py:484
+msgid "Time"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:467
+msgid "Score"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:483
+msgid "Memory copy 10×10 MB"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:485
+msgid "Bandwidth"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:514
+msgid "Disk I/O 50 MB"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:515
+msgid "Write"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:516
+msgid "Read"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:544 src/sysinfo_gtk/main.py:552
+#: src/sysinfo_gtk/main.py:917
+msgid "System Information"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:556
+msgid "Refresh all"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:560
+msgid "Copy current section"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:564
+msgid "Export full report"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:571 src/sysinfo_gtk/main.py:876
+msgid "CPU Benchmark"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:572 src/sysinfo_gtk/main.py:879
+msgid "Memory Benchmark"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:573 src/sysinfo_gtk/main.py:882
+msgid "Disk Benchmark"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:574
+msgid "Benchmarks"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:575
+msgid "Copy Debug Info"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:576
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:577
+msgid "About System Information"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:614 src/sysinfo_gtk/main.py:749
+msgid "Loading..."
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:634
+msgid "Welcome"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:640
+msgid "Welcome to System Information"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:642
+msgid ""
+"Detailed hardware and software information.\\n\\n✓ CPU, memory, storage, GPU "
+"details\\n✓ PCI and USB device listing\\n✓ Temperature and fan sensors\\n✓ "
+"Network interfaces\\n✓ CPU, memory, and disk benchmarks\\n✓ Export full "
+"system report"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:651
+msgid "Get Started"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:720
+msgid "Error"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:727
+#, python-format
+msgid "%(time)s — %(count)d items loaded"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:773
+#, python-format
+msgid "Copied: %s"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:788
+#, python-format
+msgid "Section copied: %s"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:791
+msgid "Refreshing..."
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:797
+msgid "Export System Report"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:813
+#, python-format
+msgid "Report exported to %s"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:833
+#, python-format
+msgid "Benchmark complete: %s"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:867
+#, python-format
+msgid "Running benchmark: %s..."
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:898
+msgid "Debug info copied"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:904
+msgid "General"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:906
+msgid "Quit"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:907
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py:924
+msgid ""
+"System information and benchmark tool. A modern GTK4/Adwaita alternative to "
+"hardinfo2."
+msgstr ""
