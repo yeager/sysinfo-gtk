@@ -872,16 +872,16 @@ class SysInfoApp(Adw.Application):
 
         threading.Thread(target=run, daemon=True).start()
 
-    def _on_bench_cpu(self, *_):
+    def _on_bench_cpu(self, *_args):
         self._run_bench(_("CPU Benchmark"), run_benchmark_cpu)
 
-    def _on_bench_mem(self, *_):
+    def _on_bench_mem(self, *_args):
         self._run_bench(_("Memory Benchmark"), run_benchmark_memory)
 
-    def _on_bench_disk(self, *_):
+    def _on_bench_disk(self, *_args):
         self._run_bench(_("Disk Benchmark"), run_benchmark_disk)
 
-    def _on_copy_debug(self, *_):
+    def _on_copy_debug(self, *_args):
         if not self.window:
             return
         from . import __version__
@@ -897,7 +897,7 @@ class SysInfoApp(Adw.Application):
         clipboard.set(info)
         self.window._status.set_text(_("Debug info copied"))
 
-    def _on_shortcuts(self, *_):
+    def _on_shortcuts(self, *_args):
         if self.window:
             dialog = Gtk.ShortcutsWindow(transient_for=self.window)
             section = Gtk.ShortcutsSection(visible=True)
@@ -911,7 +911,7 @@ class SysInfoApp(Adw.Application):
             dialog.append(section)
             dialog.present()
 
-    def _on_about(self, *_):
+    def _on_about(self, *_args):
         from . import __version__
         dialog = Adw.AboutDialog(
             application_name=_("System Information"),
@@ -925,7 +925,7 @@ class SysInfoApp(Adw.Application):
         )
         dialog.present(self.window)
 
-    def _on_quit(self, *_):
+    def _on_quit(self, *_args):
         self.quit()
 
 
