@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Simple system info icon in Adwaita style -->
+  <!-- Computer monitor/screen -->
+  <rect x="16" y="24" width="96" height="64" rx="4" ry="4" fill="none" stroke="#2e3436" stroke-width="3"/>
+  
+  <!-- Screen interior -->
+  <rect x="20" y="28" width="88" height="56" rx="2" ry="2" fill="#f6f5f4"/>
+  
+  <!-- Info lines on screen -->
+  <rect x="28" y="36" width="32" height="4" rx="2" fill="#3584e4"/>
+  <rect x="28" y="44" width="24" height="4" rx="2" fill="#33d17a"/>
+  <rect x="28" y="52" width="40" height="4" rx="2" fill="#f9c440"/>
+  <rect x="28" y="60" width="28" height="4" rx="2" fill="#e66100"/>
+  <rect x="28" y="68" width="36" height="4" rx="2" fill="#9141ac"/>
+  
+  <!-- CPU/chip icon on right side -->
+  <rect x="76" y="40" width="24" height="24" rx="2" fill="none" stroke="#2e3436" stroke-width="2"/>
+  <rect x="80" y="44" width="16" height="16" rx="1" fill="#2e3436"/>
+  <circle cx="84" cy="48" r="1" fill="#f6f5f4"/>
+  <circle cx="88" cy="48" r="1" fill="#f6f5f4"/>
+  <circle cx="92" cy="48" r="1" fill="#f6f5f4"/>
+  <circle cx="96" cy="48" r="1" fill="#f6f5f4"/>
+  <circle cx="84" cy="52" r="1" fill="#f6f5f4"/>
+  <circle cx="88" cy="52" r="1" fill="#f6f5f4"/>
+  <circle cx="92" cy="52" r="1" fill="#f6f5f4"/>
+  <circle cx="96" cy="52" r="1" fill="#f6f5f4"/>
+  <circle cx="84" cy="56" r="1" fill="#f6f5f4"/>
+  <circle cx="88" cy="56" r="1" fill="#f6f5f4"/>
+  <circle cx="92" cy="56" r="1" fill="#f6f5f4"/>
+  <circle cx="96" cy="56" r="1" fill="#f6f5f4"/>
+  
+  <!-- Monitor stand -->
+  <rect x="56" y="88" width="16" height="12" rx="2" fill="#2e3436"/>
+  <rect x="44" y="96" width="40" height="8" rx="4" fill="#2e3436"/>
+</svg>
