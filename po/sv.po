@@ -353,15 +353,15 @@ msgstr "Välkommen till Systeminformation"
 
 #: src/sysinfo_gtk/main.py:642
 msgid ""
-"Detailed hardware and software information.\\n\\n✓ CPU, memory, storage, GPU"
-" details\\n✓ PCI and USB device listing\\n✓ Temperature and fan sensors\\n✓ "
-"Network interfaces\\n✓ CPU, memory, and disk benchmarks\\n✓ Export full "
+"Detailed hardware and software information.\n\n✓ CPU, memory, storage, GPU"
+" details\n✓ PCI and USB device listing\n✓ Temperature and fan sensors\n✓ "
+"Network interfaces\n✓ CPU, memory, and disk benchmarks\n✓ Export full "
 "system report"
 msgstr ""
-"Detaljerad information om hårdvara och programvara.\\n\\n✓ Detaljer om CPU, "
-"minne, lagring och GPU\\n✓ Lista över PCI- och USB-enheter\\n✓ Temperatur- "
-"och fläktsensorer\\n✓ Nätverksgränssnitt\\n✓ Prestandatester för CPU, minne "
-"och disk\\n✓ Exportera fullständig systemrapport"
+"Detaljerad information om hårdvara och programvara.\n\n✓ Detaljer om CPU, "
+"minne, lagring och GPU\n✓ Lista över PCI- och USB-enheter\n✓ Temperatur- "
+"och fläktsensorer\n✓ Nätverksgränssnitt\n✓ Prestandatester för CPU, minne "
+"och disk\n✓ Exportera fullständig systemrapport"
 
 #: src/sysinfo_gtk/main.py:651
 msgid "Get Started"
@@ -432,3 +432,26 @@ msgid ""
 msgstr ""
 "Systeminformation och benchmarkverktyg. Ett modernt GTK4/Adwaita-alternativ "
 "till hardinfo2."
+
+#: src/sysinfo_gtk/main.py
+msgid "Could not export report: unsupported location"
+msgstr "Det gick inte att exportera rapporten: platsen stöds inte"
+
+#: src/sysinfo_gtk/main.py
+#, python-format
+msgid "Could not export report: %s"
+msgstr "Det gick inte att exportera rapporten: %s"
+
+#: src/sysinfo_gtk/main.py
+#, python-format
+msgid "%s failed: %s"
+msgstr "%s misslyckades: %s"
+
+#: src/sysinfo_gtk/main.py
+#, python-format
+msgid "Could not run disk benchmark: %s"
+msgstr "Det gick inte att köra diskbenchmark: %s"
+
+#: src/sysinfo_gtk/main.py
+msgid "Disk I/O 50 MB (temporary file)"
+msgstr "Disk-I/O 50 MB (temporär fil)"

@@ -178,10 +178,9 @@ def collect_memory():
             info[_("Swap total")] = f"{swap_total // 1024} MB"
             info[_("Swap used")] = f"{(swap_total - swap_free) // 1024} MB"
 
-        # Memory type from DMI
-        dmi_mem = _cmd(["sudo", "dmidecode", "-t", "memory"], timeout=2)
-        if not dmi_mem:
-            dmi_mem = _cmd(["dmidecode", "-t", "memory"], timeout=2)
+        # DMI data is optional and often requires elevated privileges. Never
+        # invoke sudo from a background collector: it can prompt or hang.
+        dmi_mem = _cmd(["dmidecode", "-t", "memory"], timeout=2)
         if dmi_mem:
             for line in dmi_mem.splitlines():
                 line = line.strip()
@@ -489,29 +488,29 @@ def run_benchmark_memory():
 def run_benchmark_disk():
     """Disk I/O benchmark."""
     import tempfile
-    tmp = tempfile.NamedTemporaryFile(delete=False)
     data = os.urandom(1024 * 1024)  # 1 MB
+    write_time = read_time = 0.0
+    try:
+        with tempfile.NamedTemporaryFile() as tmp:
+            # Write
+            start = time.monotonic()
+            for _ in range(50):
+                tmp.write(data)
+            tmp.flush()
+            os.fsync(tmp.fileno())
+            write_time = time.monotonic() - start
 
-    # Write
-    start = time.monotonic()
-    for i in range(50):
-        tmp.write(data)
-    tmp.flush()
-    os.fsync(tmp.fileno())
-    write_time = time.monotonic() - start
-
-    # Read
-    tmp.seek(0)
-    start = time.monotonic()
-    while tmp.read(1024 * 1024):
-        pass
-    read_time = time.monotonic() - start
-
-    tmp.close()
-    os.unlink(tmp.name)
+            # Read
+            tmp.seek(0)
+            start = time.monotonic()
+            while tmp.read(1024 * 1024):
+                pass
+            read_time = time.monotonic() - start
+    except OSError as e:
+        raise RuntimeError(_("Could not run disk benchmark: %s") % e.strerror) from e
 
     return {
-        gettext.gettext("Test"): gettext.gettext("Disk I/O 50 MB"),
+        gettext.gettext("Test"): gettext.gettext("Disk I/O 50 MB (temporary file)"),
         gettext.gettext("Write"): f"{50 / write_time:.0f} MB/s ({write_time:.3f} s)",
         gettext.gettext("Read"): f"{50 / read_time:.0f} MB/s ({read_time:.3f} s)",
     }
@@ -639,12 +638,12 @@ class SysInfoWindow(Adw.ApplicationWindow):
         page.set_icon_name("computer-symbolic")
         page.set_title(_("Welcome to System Information"))
         page.set_description(_(
-            "Detailed hardware and software information.\\n\\n"
-            "✓ CPU, memory, storage, GPU details\\n"
-            "✓ PCI and USB device listing\\n"
-            "✓ Temperature and fan sensors\\n"
-            "✓ Network interfaces\\n"
-            "✓ CPU, memory, and disk benchmarks\\n"
+            "Detailed hardware and software information.\n\n"
+            "✓ CPU, memory, storage, GPU details\n"
+            "✓ PCI and USB device listing\n"
+            "✓ Temperature and fan sensors\n"
+            "✓ Network interfaces\n"
+            "✓ CPU, memory, and disk benchmarks\n"
             "✓ Export full system report"
         ))
 
@@ -802,6 +801,9 @@ class SysInfoWindow(Adw.ApplicationWindow):
         try:
             f = dialog.save_finish(result)
             path = f.get_path()
+            if not path:
+                self._status.set_text(_("Could not export report: unsupported location"))
+                return
             with open(path, "w") as fh:
                 for collector in SECTIONS:
                     data = self._sections_data.get(collector)
@@ -811,8 +813,14 @@ class SysInfoWindow(Adw.ApplicationWindow):
                         for k, v in info.items():
                             fh.write(f"  {k}: {v}\n")
             self._status.set_text(_("Report exported to %s") % path)
-        except:
-            pass
+        except GLib.Error as e:
+            if e.matches(Gtk.DialogError, Gtk.DialogError.DISMISSED):
+                return
+            self._status.set_text(_("Could not export report: %s") % e.message)
+        except OSError as e:
+            self._status.set_text(_("Could not export report: %s") % e.strerror)
+        except Exception as e:
+            self._status.set_text(_("Could not export report: %s") % str(e))
 
     def _show_benchmark_result(self, title, results):
         """Show benchmark results in the detail list."""
@@ -831,6 +839,10 @@ class SysInfoWindow(Adw.ApplicationWindow):
             self._detail_list.append(row)
 
         self._status.set_text(_("Benchmark complete: %s") % title)
+
+    def _show_benchmark_error(self, title, message):
+        """Show a benchmark failure without leaving the user waiting."""
+        self._status.set_text(_("%s failed: %s") % (title, message))
 
 
 # ── Application ──────────────────────────────────────────────
@@ -866,9 +878,15 @@ class SysInfoApp(Adw.Application):
             return
         self.window._status.set_text(_("Running benchmark: %s...") % title)
 
+        window = self.window
+
         def run():
-            results = bench_func()
-            GLib.idle_add(self.window._show_benchmark_result, title, results)
+            try:
+                results = bench_func()
+            except Exception as e:
+                GLib.idle_add(window._show_benchmark_error, title, str(e))
+                return
+            GLib.idle_add(window._show_benchmark_result, title, results)
 
         threading.Thread(target=run, daemon=True).start()
 

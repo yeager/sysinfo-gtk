@@ -349,9 +349,9 @@ msgstr ""
 
 #: src/sysinfo_gtk/main.py:642
 msgid ""
-"Detailed hardware and software information.\\n\\n✓ CPU, memory, storage, GPU "
-"details\\n✓ PCI and USB device listing\\n✓ Temperature and fan sensors\\n✓ "
-"Network interfaces\\n✓ CPU, memory, and disk benchmarks\\n✓ Export full "
+"Detailed hardware and software information.\n\n✓ CPU, memory, storage, GPU "
+"details\n✓ PCI and USB device listing\n✓ Temperature and fan sensors\n✓ "
+"Network interfaces\n✓ CPU, memory, and disk benchmarks\n✓ Export full "
 "system report"
 msgstr ""
 
@@ -421,4 +421,27 @@ msgstr ""
 msgid ""
 "System information and benchmark tool. A modern GTK4/Adwaita alternative to "
 "hardinfo2."
+msgstr ""
+
+#: src/sysinfo_gtk/main.py
+msgid "Could not export report: unsupported location"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py
+#, python-format
+msgid "Could not export report: %s"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py
+#, python-format
+msgid "%s failed: %s"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py
+#, python-format
+msgid "Could not run disk benchmark: %s"
+msgstr ""
+
+#: src/sysinfo_gtk/main.py
+msgid "Disk I/O 50 MB (temporary file)"
 msgstr ""
